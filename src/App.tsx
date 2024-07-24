@@ -26,9 +26,6 @@ function App() {
   const [RESULTYEAR, SetRESULTYEAR] = useState<number>(0);
   const [Click, setClick] = useState<Boolean>(true);
   const [Mistake, setMistake] = useState<Boolean>(false);
-  const [MistakeDay, setMistakeDay] = useState<Boolean>(false);
-  const [MistakeMonth, setMistakeMonth] = useState<Boolean>(false);
-  const [MistakeYear, setMistakeYear] = useState<Boolean>(false);
 
   const today = new Date();
 
@@ -47,14 +44,6 @@ function App() {
     let NewDataUser = ChoosenDate.getDate();
     let NewMonthUser = ChoosenDate.getMonth();
     let NewYearUser = ChoosenDate.getFullYear();
-
-    console.log(NewDataUser + " DATA");
-    console.log(NewMonthUser + " MUAJI");
-
-    console.log(DataUser + " Dataaa");
-    console.log(MonthArr[MonthUser - 1] + " MUAJJJ");
-
-    console.log(NewDataUser + " " + DataUser);
 
     if (
       Number.isNaN(NewDataUser) ||
@@ -88,7 +77,6 @@ function App() {
       setClick(false);
     }
   }
-  console.log(RESULTMONTH);
   return (
     <>
       <div className=" bg-slate-200 h-screen flex justify-center items-center flex-col ">
