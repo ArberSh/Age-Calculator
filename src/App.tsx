@@ -102,7 +102,7 @@ function App() {
                 />
                 {Number.isNaN(RESULTDAY) ||
                   (ResultDay !== RESULTDAY && (
-                    <h2 className=" text-red-400 italic text-sm">
+                    <h2 className="max-[500px]:text-xs text-red-400 italic text-sm">
                       Must be a valid day
                     </h2>
                   ))}
@@ -144,7 +144,7 @@ function App() {
                   onChange={(e) => SetMonthUser(parseInt(e.target.value))}
                 />
                 {(Number.isNaN(RESULTMONTH) || RESULTMONTH > 12) && (
-                  <h2 className=" text-red-400 italic text-sm">
+                  <h2 className="max-[500px]:text-xs text-red-400 italic text-sm">
                     Must be a valid month
                   </h2>
                 )}
@@ -181,7 +181,7 @@ function App() {
                 max={2024}
                 onChange={(e) => SetYearUser(parseInt(e.target.value))}
               />
-              {Number.isNaN(RESULTYEAR) || YearUser > 2024 && <h2 className="text-red-400 italic text-sm">Must be a valid Year</h2>}
+              {Number.isNaN(RESULTYEAR) || YearUser > 2024 && <h2 className="max-[500px]:text-xs text-red-400 italic text-sm">Must be a valid Year</h2>}
               
             </div>
             ): (
